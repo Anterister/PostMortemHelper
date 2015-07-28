@@ -188,7 +188,7 @@
 
                             ccs_title.items[0].insertText(String(data.title), "replace");
                         } else {
-                            $('#div-bug').append("<p>Bug title cc not found!</p>");
+                            $('#div-bug').append("<h4><span style='color: #990000;'>Bug title cc not found!</span></h4>");
                         }
 
                         if (ccs_id.items.length > 0) {
@@ -198,7 +198,8 @@
                                 "'..</p><a id='undoId' href='#' class='undoCC'>Undo</a></div>");
                             ccs_id.items[0].insertText(bugNum, "replace");
                         } else {
-                            $('#div-bug').append("<p>Bug id cc not found!</p>");
+                            $('#div-bug')
+                            .append("<h4><span style='color: #990000;'>Bug id cc not found!</span></h4>");
                         }
 
                         if (ccs_severity.items.length > 0) {
@@ -209,7 +210,7 @@
                             // app.showNotification("4", data.severity);
                             ccs_severity.items[0].insertText(String(data.severity), "replace");
                         } else {
-                            $('#div-bug').append("<p>Bug severity cc not found!</p>");
+                            $('#div-bug').append("<h4><span style='color: #990000;'>Bug severity cc not found!</span></h4>");
                         }
 
                         if (ccs_team.items.length > 0) {
@@ -219,7 +220,7 @@
                                 "'..</p><a id='undoTeam' href='#' class='undoCC'>Undo</a></div>");
                             ccs_team.items[0].insertText(String(data.accountable_team), "replace");
                         } else {
-                            $('#div-bug').append("<p>Bug severity cc not found!</p>");
+                            $('#div-bug').append("<h4><span style='color: #990000;'>Bug severity cc not found!</span></h4>");
                         }
 
                         if (ccs_ttrestore.items.length > 0) {
@@ -229,7 +230,7 @@
                                 "'..</p><a id='undoTTRestore' href='#' class='undoCC'>Undo</a></div>");
                             ccs_ttrestore.items[0].insertText(String(data.duration), "replace");
                         } else {
-                            $('#div-bug').append("<p>Bug restore time cc not found!</p>");
+                            $('#div-bug').append("<h4><span style='color: #990000;'>Bug restore time cc not found!</span></h4>");
                         }
 
                         if (ccs_owner.items.length > 0) {
@@ -239,7 +240,7 @@
                                 "'..</p><a id='undoOwner' href='#' class='undoCC'>Undo</a></div>");
                             ccs_owner.items[0].insertText(String(data.dev), "replace");
                         } else {
-                            $('#div-bug').append("<p>Bug dev owner cc not found!</p>");
+                            $('#div-bug').append("<h4><span style='color: #990000;'>Bug dev owner cc not found!</span></h4>");
                         }
 
                         if (ccs_rca.items.length > 0) {
@@ -261,7 +262,7 @@
                             }
 
                         } else {
-                            $('#div-bug').append("<p>Bug root cause cc not found!</p>");
+                            $('#div-bug').append("<h4><span style='color: #990000;'>Bug root cause cc not found!</span></h4>");
                         }
                         
                         ctx.executeAsync().then(function(){
