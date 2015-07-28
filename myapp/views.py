@@ -4,9 +4,6 @@ from django.shortcuts import render
 import json
 from django.http import HttpResponse
 
-import twitter
-from instagram.client import InstagramAPI
-
 import time
 
 from urllib import urlretrieve
